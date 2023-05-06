@@ -5,3 +5,10 @@
  * `contextIsolation` is turned on. Use the contextBridge API in `preload.js`
  * to expose Node.js functionality from the main process.
  */
+const watermark = new WatermarkPlus.Watermark({
+  content: 'hello my watermark',
+  width: 200,
+  height: 200
+})
+
+watermark.create()
